@@ -1,18 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers from 0 to 9.
+ * main - Entry point
+ * Description - print all single numbers of base 10 starting from 0
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
+
 int main(void)
 {
-	int i;
+	int low = 0;
 
-	for (i = 0; i < 10; i++)
+	while (low < 10)
 	{
-		printf("%d", i);
+		printf("%i", low);
+		low++;
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
-}	
+}
